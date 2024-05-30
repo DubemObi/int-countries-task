@@ -215,6 +215,7 @@ main {
 .dark-mode .select-wrapper {
   box-shadow: 0px 0px 8px 3px hsl(202, 15%, 14%);
   background-color: hsl(209, 23%, 22%);
+  color: white;
 }
 
 .dark-mode #back {
