@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countries</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/287348e412.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <h2>Where in the world?</h2>
+      <h4 id="theme-toggle"><i class="fa-regular fa-moon"></i> Dark Mode</h4>
+    </header>
+    <main>
+      <div class="filter-search">
+        <div class="search-container">
+          <input
+            type="text"
+            id="search"
+            placeholder="Search for a country..."
+          />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="select-wrapper">
+          <div class="select">
+            <div class="select-trigger">
+              Filter by Region <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="options">
+              <span class="option" data-value="">All</span>
+              <span class="option" data-value="Africa">Africa</span>
+              <span class="option" data-value="Americas">Americas</span>
+              <span class="option" data-value="Asia">Asia</span>
+              <span class="option" data-value="Europe">Europe</span>
+              <span class="option" data-value="Oceania">Oceania</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="country-list">
+        <!-- Countries will be displayed here -->
+      </div>
+    </main>
+    <div id="country-detail" class="hidden">
+      <!-- Detailed country info will be displayed here -->
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
